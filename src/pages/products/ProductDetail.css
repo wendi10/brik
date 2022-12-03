@@ -1,0 +1,42 @@
+.ProductDetail {
+    margin: 0 auto;
+    width: 35%;
+    min-width: 250px;
+    margin-bottom: 80px;
+}
+
+.ProductDetail .ProductDetail-image{
+    display: block;
+    width: 100%;
+    min-width: 250px;
+}
+
+.ProductDetail .ProductDetail-name{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.ProductDetail .ProductDetail-price{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.ProductDetail .ProductDetail-description{
+    font-size: 1rem;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.ProductDetail .ProductDetail-subtitle{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.ProductDetail .ProductDetail-specification{
+    font-size: 1rem;
+    font-weight: 500;
+}
+

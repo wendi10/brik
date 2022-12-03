@@ -1,0 +1,41 @@
+.ProductCard{
+    height: 300px;
+    width: 200px;
+    border: 2px solid rgb(207, 204, 204);
+    border-radius: 16px;
+    padding: 16px;
+    margin: 16px;
+    cursor: pointer;
+    transition: border 200ms ease-out 100ms;
+}
+
+.ProductCard a{
+    text-decoration: none;
+    color: black;
+}
+.ProductCard .Product-image {
+    width: 100%;
+}
+
+.ProductCard .Product-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 12px 0 6px 0;
+}
+
+.ProductCard .Product-category {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 6px 0;
+}
+
+.ProductCard .Product-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 6px 0;
+    word-wrap: break-word;
+}
+
+.ProductCard:hover{
+    border: 3px solid rgb(177, 173, 173);
+}

@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+import "./App.css";
+
+//part
+import Header from "./parts/header";
+import Footer from "./parts/footer";
+
+//pages
+import ProductList from "./pages/products/ProductList";
+import ProductDetail from "./pages/products/ProductDetail";
+import ProductAdd from "./pages/products/ProductAdd";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <div className="App-header">
+          <Header></Header>
+        </div>
+
+        <Routes>
+          <Route exact path="/" element={<ProductList />} />
+          <Route exact path="/:productId" element={<ProductDetail />} />
+          <Route exact path="/create" element={<ProductAdd />} />
+        </Routes>
+
+        <div className="App-footer d-flex justify-content-center">
+          <Footer></Footer>
+        </div>
+      </Router>
+    </>
   );
 }
 
